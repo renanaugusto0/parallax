@@ -1,46 +1,63 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Parallax</title>
 	<style>
-		body, html {
+		body,
+		html {
 			margin: 0px;
 			font: 16px "Lato", sans-serif;
 			color: #777;
 			height: 100%;
-			border: 1px solid red;
 			width: 100%;
 		}
+
 		.conteudo {
 			color: #777;
 			background-color: white;
 			text-align: justify;
 			padding: 50px 80px;
 		}
+
 		h3 {
 			text-transform: uppercase;
 			color: #111;
 			text-align: center;
 		}
-		/* Efeitos Parallax */
-		
 
-</style>
+		/* Efeitos Parallax */
+		.caixa1,
+		.caixa2 {
+			border: 1px red solid;
+			height: 100%;
+		}
+
+		.caixa1 {
+			background-image: url(imagens/imagem1.jpg);
+		}
+
+		.caixa2 {
+			background-image: url(imagens/imagem2.jpg);
+		}
+	</style>
 </head>
+
 <body>
-	
-	<div>
-		Conteudo 1
+
+	<div class="caixa1">
+		Caixa 1
 	</div>
 	<div class="conteudo">
 		<h3>Parallax</h3>
 		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem incidunt optio quod commodi!</p>
 
 	</div>
-	<div>
-		Conteudo 3
+	<div class="caixa2">
+		Caixa 2
 	</div>
 </body>
+
 </html>
